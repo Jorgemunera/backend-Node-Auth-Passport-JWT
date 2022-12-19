@@ -5,7 +5,7 @@ services:
     image: postgres:13
     environment:
       - POSTGRES_DB=my_store
-      - POSTGRES_USER=nico
+      - POSTGRES_USER=jorge
       - POSTGRES_PASSWORD=admin123
     ports:
       - 5432:5432
@@ -28,7 +28,7 @@ services:
       - MYSQL_ROOT_PASSWORD=admin123
       - MYSQL_PORT=3306
     ports:
-      - 3306:3306
+      - 33061:3306
     volumes:
       - ./mysql_data:/var/lib/mysql
 
